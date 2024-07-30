@@ -2,6 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import logo from '../../public/logo.png'
 import Link from "next/link";
+import { ThemeModeToggle } from "@/components/theme-mode";
 
 export default function Header() {
   return (
@@ -14,11 +15,13 @@ export default function Header() {
         <h1>Recipes</h1>
       </div>
       
-      <nav className="flex items-center  gap-4">
+      <nav className="flex items-center  gap-8">
         <Link href={'/'}>Home</Link>
         <Link href={'/about'}>About</Link>
         <Link href={'/fqa'}>FQA</Link>
+        <ThemeModeToggle/>
       </nav>
+      
     </header>
   
   );
