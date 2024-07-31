@@ -39,6 +39,13 @@ export default async function Home() {
           <Card key={recipe.id} className="flex flex-col justify-between">
             <CardHeader className="flex-row gap-4 items-center">
               
+              <Avatar>
+                <AvatarImage src={`/img/${recipe.image}`}/>
+                <AvatarFallback>
+                  {recipe.title.slice(0, 2)}
+                </AvatarFallback>
+              </Avatar>
+              
               <div>
                 <CardTitle>{recipe.title}</CardTitle>
                 <CardDescription>{recipe.time} mins to cook.</CardDescription>
@@ -60,6 +67,28 @@ export default async function Home() {
           </Card>
         ))}
       </div>
+      
+      <Pagination className='mt-4'>
+        <PaginationContent>
+          <PaginationItem>
+            <PaginationPrevious href="#"/>
+          </PaginationItem>
+          
+          <PaginationItem>
+            <PaginationLink href="#">1</PaginationLink>
+          </PaginationItem>
+          
+          <PaginationItem>
+            <PaginationEllipsis/>
+          </PaginationItem>
+          
+          <PaginationItem>
+            <PaginationNext href="#"/>
+          </PaginationItem>
+        
+        </PaginationContent>
+      </Pagination>
+    
     </main>
   )
 }
