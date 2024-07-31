@@ -68,7 +68,7 @@ export default async function Home() {
         ))}
       </div>
       
-      <Pagination className='mt-4'>
+      <Pagination>
         <PaginationContent>
           <PaginationItem>
             <PaginationPrevious href="#"/>
