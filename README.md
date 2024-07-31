@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Recipe Application
 
-## Getting Started
+<img src="public/home.jpg" alt="recipe">
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project is a recipe application built with Next.js, Shadcn/UI for the user interface, and JSON-Server for mock
+data. The primary goal is to implement and showcase the components and design system provided by Shadcn/UI.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Table of Contents
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- **Recipe Listings**: View a list of recipes with details such as ingredients and instructions.
+- **Accordion Interface**: Use Shadcn/UI's accordion components to display and manage recipes in an interactive format.
+- **Mock Backend**: JSON-Server serves as a mock backend for handling recipe data.
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Node.js
+- npm or Yarn
 
-## Deploy on Vercel
+### Steps
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/recipe-app.git
+   cd recipe-app
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. **Install Dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run the JSON-Server**
+   JSON-Server is used to serve the recipe data from a local `db.json` file.
+
+   ```bash
+   npx json-server --watch db.json --port 5000
+   ```
+
+4. **Start the Development Server**
+   Start the Next.js development server.
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+   The application will be accessible at `http://localhost:3000`.
+
+## Usage
+
+- Browse recipes on the main page.
+- Click on a recipe to view details using the accordion components.
+- Modify the recipe data by editing the `db.json` file.
+
+## Technologies Used
+
+- **[Next.js](https://nextjs.org/)**: React framework for server-rendered applications.
+- **[Shadcn/UI](https://shadcn.dev/)**: A design system providing UI components.
+- **[JSON-Server](https://github.com/typicode/json-server)**: A full fake REST API for prototyping and mocking data.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your changes. Ensure that your code
+follows the project's coding standards and includes tests if applicable.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
