@@ -72,7 +72,7 @@ data. The primary goal is to implement and showcase the components and design sy
 ## Technologies Used
 
 - **[Next.js](https://nextjs.org/)**: React framework for server-rendered applications.
-- **[Shadcn/UI](https://shadcn.dev/)**: A design system providing UI components.
+- **[Shadcn/UI](https://ui.shadcn.com/)**: A design system providing UI components.
 - **[JSON-Server](https://github.com/typicode/json-server)**: A full fake REST API for prototyping and mocking data.
 
 ## Contributing
