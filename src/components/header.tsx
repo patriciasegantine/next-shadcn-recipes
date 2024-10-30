@@ -17,8 +17,9 @@ export default function Header() {
       
       <nav className="flex items-center  gap-8">
         <Link href={'/'}>Home</Link>
-        <Link href={'/about'}>About</Link>
+        <Link href={'/contact'}>Contact</Link>
         <Link href={'/fqa'}>FQA</Link>
+        <Link href={'/login'}>Login</Link>
         <ThemeModeToggle/>
       </nav>
       
